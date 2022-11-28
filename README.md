@@ -4,8 +4,6 @@ This is a Keras implementation of “MBLLEN: Low-light Image/Video Enhancement U
 
 **[Paper](http://bmvc2018.org/contents/papers/0700.pdf), [Dataset](https://drive.google.com/file/d/1U1hyvVktYEoK_3cdcbWNaJ1WDft2mLRl/view?usp=sharing) and [Project page](http://phi-ai.buaa.edu.cn/project/MBLLEN/index.htm)**
 
-![](figs/figure.png)
-
 ## Requirements ##
 
 - [x] python 3  
@@ -49,40 +47,6 @@ By default, the code takes the data in the "../dataset/" folder and save weights
 - [x] Syn_img_lowlight_withnoise.h5  (This model is trained using synthetic lowlight images based on Poisson noise model. It is using for enhancement and denoising simultaneously.)
 - [x] Syn_img_lowlight.h5  (This model is trained using synthetic lowlight images without additional noise. It is using only for enhancement.)
 - [x] LOL_img_lowlight.h5  (This model is fine-tuned using LOL Dataset.)
-
-## Performance on Real Lowlight Images
-
-To obtain better enhancement result, we linearly amplify the output of the network to improve contrast. Please read the code to see other parameter settings. 
-
-![](figs/figure2.png)
-
-![](figs/reallowlight.png)
-
-##  Performance on [LOL Dataset](https://github.com/weichen582/RetinexNet)
-
-Our LOL fine-tuned version performs well on LOL test images. 
-
-![](figs/LOL.png)
-
-##  Performance on [DeepUPE Dataset](https://github.com/wangruixing/DeepUPE)
-
-Our model is comparable with DeepUPE. Notice that, our models are not fine-tuned using DeepUPE's images (training images are not provided).
-
-![](figs/Deep.png )
-
-
-## Bibtex
-
-If you use this code for your research, please cite our paper.
-
- ```
- @inproceedings{Lv2018MBLLEN,
-  title={MBLLEN: Low-light Image/Video Enhancement Using CNNs},
-  author={Feifan Lv, Feng Lu, Jianhua Wu, Chongsoon Lim},
-  booktitle={British Machine Vision Conference (BMVC)},
-  year={2018}
-}
- ```
 
 ## Related Follow-Up Work
 
