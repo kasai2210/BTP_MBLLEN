@@ -119,7 +119,7 @@ def convert(file_path):
 def show_convert_button(file_path):
     convert_b=Button(top,text="Convert Image", command=lambda: convert(file_path),padx=10,pady=5)
     convert_b.configure(background='#364156', foreground='white', font=('arial',14,'bold'))
-    convert_b.pack(side=BOTTOM,pady=50)
+    convert_b.place(relx=0.421, rely=0.14)
 
 def upload_image():
     try:

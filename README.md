@@ -14,21 +14,14 @@ This is a Keras implementation of “MBLLEN: Low-light Image/Video Enhancement U
 ## Usage ##
 
 #### Testing
-Start jupyter notebook using - 
+You can run the Gui made in tkinter by going to the ```main/``` folder and then
 ```
-jupyter-notebook \
-  --NotebookApp.allow_origin='https://colab.research.google.com' \
-  --port=8888 \
-  --NotebookApp.port_retries=0
-```
-To quickly test your own low-light images with our model, you can just run through
-
-```shell
-cd main
-python test.py -i <input folder> -r <output folder> -m <model name>
+python gui.py
 ```
 
-By default, the code takes the data in the "../input/" folder, loads the "Syn_img_lowlight_withnoise.h5" model and saves results in the "../result/" folder.  Please read the code to see other parameter settings. 
+![](figs/ss.png)
+
+By default, the code takes the photo that you upload, loads the "10_dark_base.h5" model and saves results in the "../result/" folder.  Please read the code to see other parameter settings. 
 
 #### Training:
 
